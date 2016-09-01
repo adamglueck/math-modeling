@@ -7,7 +7,7 @@ shortlist=[]
 for a in range (0,n-1):
     for b in range (0,n-1-a):
         c=n-2-b-a
-        list=[a, a+b, a+b+c, a+b+c+d, a+b+c+d+e, b, b+c, b+c+d, b+c+d+e, c, c+d, c+d+e, d, d+e, e]
+        list=[a,b,c,1,2,a+b,a+c,a+1,a+2,b+c,b+1,b+2,c+1,c+2,a+b+c,a+b+1,a+b+2,a+c+1,a+c+2,b+c+1,b+c+2,a+b+c+1,a+b+c+2]
         fail="no"
         for j in nlist:
             if j not in list:
