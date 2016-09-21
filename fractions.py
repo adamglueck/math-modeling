@@ -15,10 +15,14 @@ while test=="true":
     if ticks==0:
         string=string+"."
     ticks=ticks+1
-    if ticks>100:
+    if ticks>300:
         test="false"
 if test=="false2":
-    print(str(storeticks)+" nonrepeating digits")
+    if storeticks==1:
+        text="digit"
+    if storeticks!=1:
+        text="digits"
+    print(str(storeticks)+" nonrepeating "+text)
 print(string)
 listy2=[]
 lastj=0
@@ -33,7 +37,11 @@ for j in range (1,len(listy)-1):
                 lastj=j
 test4="false"
 if repeater!=-7:
-    print (str(repeater)+" repeating digits")
+    if repeater==1:
+        text="digit"
+    if repeater!=1:
+        text="digits"
+    print (str(repeater)+" repeating "+text)
     test3="true"
     nonrep=0
     for k in range (0,repeater):
@@ -41,6 +49,10 @@ if repeater!=-7:
             nonrep=1+nonrep
             test4="true"
 if test4=="true":
-    print(str(nonrep)+" nonrepeating digits")
+    if nonrep==1:
+        text="digit"
+    if nonrep!=1:
+        text="digits"
+    print(str(nonrep)+" nonrepeating "+text)
     
         
