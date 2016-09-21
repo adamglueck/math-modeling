@@ -27,10 +27,10 @@ print(string)
 listy2=[]
 lastj=0
 repeater=-7
-for j in range (1,len(listy)-1):
+for j in range (1,len(listy)-4):
     if test2=="true":
-        for i in range (1,len(listy)-j-1):
-            if listy[i]==listy[i+j] and listy[i+1]==listy[i+j+1]:
+        for i in range (1,len(listy)-j-4):
+            if listy[i]==listy[i+j] and listy[i+1]==listy[i+j+1] and listy[i+2]==listy[i+j+2] and listy[i+3]==listy[i+j+3] and listy[i+4]==listy[i+j+4]:
                 if j!=lastj:
                     repeater=(j-lastj)
                     test2="false"
